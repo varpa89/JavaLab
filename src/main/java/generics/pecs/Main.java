@@ -36,9 +36,18 @@ public class Main {
     private static void procSource(Collection<? extends Shape> source) {
         //source.forEach(Shape::test);
         //source.add(new Shape());
+        //source.add(new Object());
+        for( Shape o : source){
+
+        }
     }
 
     private static void procDest(Collection<? super Shape> dest) {
         dest.add(new Square());
+        dest.add(new Shape());
+
+        for( Object o : dest){
+
+        }
     }
 }
